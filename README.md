@@ -66,6 +66,8 @@ Demonstrates the common `List<int>` operations side-by-side with arrays:
 
 This is the direct contrast to `ArrayWork.cs`: same idea (storing a sequence of numbers) but with a resizable collection and its richer API.
 
+Side note: the designer for this form also has a `txtName`/`txtScore`/`btnSave`/`btnPrint`/`btnReset` group (visible at the bottom of the window) left over with no click handlers wired up — harmless leftover from early iteration, kept as-is rather than cleaned up after the fact.
+
 ### `MethodWork.cs` — Methods & composition
 A single private `Add(decimal, decimal)` method reused across multiple buttons:
 - `btnAdd2` calls it once for two numbers.
@@ -77,7 +79,33 @@ The point of this exercise is method reuse: writing `Add` once and building more
 
 ## Screenshots
 
-_Add screenshots here of each form running (Form1's menu, ArrayWork, EventWork, GradeFinder, ListWork, MethodWork) — see `/screenshots`._
+All screenshots below are from the app actually running (built and launched via Visual Studio), not mockups.
+
+**Grade Finder** — entering `85` and clicking Find Grade:
+
+![Grade Finder](screenshots/gradefinder.png)
+
+**Event Work** — the button after a mouse hover (`MouseHover` swapped its color to dark red):
+
+![Event Work](screenshots/eventwork.png)
+
+**Methods** — `Add(15, 27)` computed through the shared `Add` method:
+
+![Methods result](screenshots/methodwork_result.png)
+
+**Array Work** — two players saved into the fixed-size arrays:
+
+![Array Work](screenshots/arraywork.png)
+
+`Print` reading back the full (fixed-size) array, including the still-empty slots:
+
+![Array Work result](screenshots/arraywork_result.png)
+
+**List Work** — the form, `Capacity` after adding three items, and `Print` showing the list contents:
+
+![List Work](screenshots/listwork.png)
+![List Work capacity](screenshots/listwork_capacity.png)
+![List Work result](screenshots/listwork_result.png)
 
 ## Notes
 
